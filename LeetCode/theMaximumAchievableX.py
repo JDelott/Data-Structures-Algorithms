@@ -2,14 +2,14 @@ class Solution:
     def theMaxAchievableX(self, num: int, t: int) -> int:
         result = []
         for i in range(num):
-            res = (i + 1) * t
+            res = (i + t) + 1
             total_value = res + t
             result.append(total_value)
         return result[-1]
 
 
 solution = Solution()
-print(solution.theMaxAchievableX(5, 2))
+print(solution.theMaxAchievableX(4, 1))
 # psuedocode
 
 # find the value of num
